@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend+Deca&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   min-height: 100vh;
+   width: 100%;
+   font-family: "Inter";
+   background: hsl(233, 47%, 7%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   overflow-x: hidden;
+}
+
+.main{
+   width: 80vw;
+   min-height: 59vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: hsl(244, 38%, 16%);
+   color: #fff;
+   border-radius: 20px;
+}
+
+.text{
+   padding-left: 5%;
+}
+
+.text .heading{
+   font-size: 2.5rem;
+   font-weight: bold;
+   margin-bottom: 10%;
+}
+
+.text .heading span{
+   color: hsl(277, 64%, 61%);
+}
+
+.text .description{
+   font-size: 18px;
+   color: hsla(0, 0%, 100%, 0.75);
+   font-family: "Lexend Deca";
+   line-height: 1.4;
+   margin-bottom: 15%;
+}
+
+.figures div{
+   display: inline-block;
+   text-align: center;
+   margin-right: 13%;
+   color: hsla(0, 0%, 100%, 0.6);
+}
+
+.figures div span{
+   font-size: 2rem;
+   font-weight: 800;
+   color: #fff;
+}
+
+.main .overlay{
+   position: absolute;
+   height: 59.1vh;
+   width: 35.2vw;
+   background: hsl(277, 64%, 61%);
+   z-index: 2;
+   right: 10vw;
+   opacity: 0.4;
+}
+
+.mobile-img{
+   display: none;
+}
+
+@media (max-width:375px){
+   .main{
+      flex-direction: column-reverse;
+      margin: 15px auto;
+      padding: 0 10px;
+      text-align: center;
+   }
+
+   .main .heading{
+      font-size: 1.6rem;
+      margin-top: 3%;
+   }
+
+   .overlay, .desktop-img{
+      display: none;
+   }
+
+   .mobile-img {
+      display: block;
+      height: 280px;
+      width: 290px;
+   }
+
+   .figures div{
+      display: block;
+      margin-bottom: 3%;
+   }
+
+}
